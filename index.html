@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/35bf46602f.js" crossorigin="anonymous"></script>
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#hobbies">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                
+                <h1>Hi, I'm <span>Akshit</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------about-------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src= "user2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, velit ipsum numquam optio corporis aliquid sunt aspernatur? Ad, maiores nobis quos sapiente expedita pariatur adipisci culpa fuga incidunt doloremque reiciendis.
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    
+                    <div class="tab-contents active-tab" id="Skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>C/C++, Python, HTML, CSS, Javascript</li>
+                            <li><span>Area of interest</span><br>Data Structures and Algorithms, Competitive Programming, Machine Learning/Deep Learning, Computer Vision and Image Processing</li>
+                        </ul>
+                        
+                    </div>
+                    
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            
+                            <li><span>2025</span><br>B.Tech in Electronics Engineering from Indian Institute of Technology(BHU) Varanasi</li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <!----------------------hobbies------------------>
+   <div id="hobbies">
+    <div class="container">
+        <h1 class="sub-title">My Hobbies</h1>
+        <div class="hobbies-list">
+            <div>
+                
+                <h2>Music</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis cumque nisi eos consequuntur, similique harum?
+                    Fugit eligendi consectetur libero blanditiis asperiores,
+                    mollitia ut repellendus magnam alias deleniti veritatis
+                    optio recusandae?</p>
+                    
+            </div>
+            <div>
+                
+                <h2>3D Animation</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis cumque nisi eos consequuntur, similique harum?
+                    Fugit eligendi consectetur libero blanditiis asperiores,
+                    mollitia ut repellendus magnam alias deleniti veritatis
+                    optio recusandae?</p>
+                    
+            </div>
+            <div>
+                
+                <h2>Competitive Programming</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis cumque nisi eos consequuntur, similique harum?
+                    Fugit eligendi consectetur libero blanditiis asperiores,
+                    mollitia ut repellendus magnam alias deleniti veritatis
+                    optio recusandae?</p>
+                    
+            </div>
+
+        </div>
+    </div>
+   </div>
+
+  <!-----------------------portfolio----------------------->
+  <div id = "portfolio">
+      <div class="container">
+          <h1 class="sub-title">My Work</h1>
+          <div class="work-list">
+              <div class="work">
+                  <h2>Sign Language Recognition Using Python and Open CV</h2>
+                  <p>In this sign language recognition project, we created a sign detector,
+                    which detects numbers from 1 to 10 that can very easily be extended
+                    to cover a vast multitude of other signs and hand gestures including
+                    the alphabets.
+                    We have developed this project using OpenCV and Keras modules of python.</p>
+              </div>
+
+              <div class="work">
+                  <h2>Cell Phone detector using CA3130 Op-Amp</h2>
+                  <p>Cell Phone Detector is a circuit that detects the presence of Cell phone
+                    up to a certain range. This circuit detects the phone when an incoming 
+                    call or outgoing call is made or when an SMS is sent or received. It can 
+                    also be called as Frequency Detector. When the circuit detects an RF signal 
+                    from an activated Cell phone, it gives an indication by switching ON an LED.</p>
+              </div>
+
+              <div class="work">
+                  <h2>Ongoing Research Project</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Perspiciatis cumque nisi eos consequuntur, similique harum?
+                    Fugit eligendi consectetur libero blanditiis asperiores,
+                    mollitia ut repellendus magnam alias deleniti veritatis
+                    optio recusandae?</p>
+              </div>
+
+              
+          </div>
+      </div>
+
+  </div>
+
+  <!-- ---------------contact----------------- -->
+  <div id="contact">
+      <div class="container">
+          <div class="row">
+              <div class="contact-left">
+                  <h1 class="sub-title">Contact Me</h1>
+                  <p><i class="fas fa-paper-plane"></i>mr.akshit.ece21@itbhu.ac.in</p>
+                  <p><i class="fas fa-phone-square-alt"></i>+91 7995823830</p>
+                  <div class="social-icons">
+                      <a href="https://www.facebook.com/akshit.mangu.1/"><i class="fab fa-facebook"></i></a>
+                      <a href="https://www.instagram.com/akshit_9403/"><i class="fab fa-instagram"></i></a>
+                      <a href="linkedin.com/in/m-r-akshit-ba703a237"><i class="fab fa-linkedin"></i></a>
+                  </div>
+              </div>
+              <div class="contact-right">
+                  <form>
+                      <input type="text" name="Name" placeholder="Your Name" required>
+                      <input type="email" name="email" placeholder="Your Email" required>
+                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                      <button type="submit" class="btn">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+
+      </div>
+  </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+</body>
+</html>
